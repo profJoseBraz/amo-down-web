@@ -1,0 +1,100 @@
+header{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .navegacao{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navegacao .mascote-left,
+header .navegacao .mascote-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 10%;
+    height: 100%;
+}
+
+header .navegacao .mascote-left img,
+header .navegacao .mascote-right img{
+    width: 80%;
+    height: 100%;
+}
+
+header .navegacao .sections-left{
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 55px;
+}
+
+header .navegacao .sections-left span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .navegacao .sections-left span:hover{
+    cursor: pointer;
+    color: rgba(122, 117, 181, 0.8);
+    transition: .3s;
+}
+
+header .navegacao .logo{
+    width: 300px;
+    height: 100%;
+}
+
+header .navegacao .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header .navegacao .sections-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+    height: 100%;
+
+    gap: 55px;
+}
+
+header .navegacao .sections-right span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .navegacao .sections-right span:hover{
+    cursor: pointer;
+    color: rgba(122, 117, 181, 0.8);
+    transition: .1s;
+}
+
+header .subtitle{
+    width: auto;
+    padding: 5px 30px;
+    border-top: 2px solid rgba(0, 0, 0, 0.150);
+}
+
+header .subtitle span{
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.200);
+}
