@@ -1,0 +1,41 @@
+.container-table {
+    font-family: Arial, sans-serif;
+    background-color: rgba(228, 184, 248, 0.836);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #9512b6;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .today {
+    background-color: #e97bec;
+  }
+  .table-all{
+    display: flex;
+  }
+
+  .container-table .table-logo img{
+    width: 150px;
+    height: auto;
+  }
