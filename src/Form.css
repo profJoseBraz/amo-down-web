@@ -1,0 +1,57 @@
+.form {
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(93, 93, 114);
+    color: rgb(250, 250, 250);
+    padding-top: 35px;
+}
+
+.line {
+    height: 0;
+    width: 100px;
+    border: 1px black solid;
+    margin: 8px 0 8px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.all-inputs {
+    display: flex;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    width: 470px;
+    margin-right: 20px;
+}
+
+form textarea, input {
+    outline: none;
+}
+
+form button {
+    width: 200px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputs input {
+    width: 470px;
+    padding: 15px;
+}
