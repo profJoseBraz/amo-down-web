@@ -1,16 +1,15 @@
 import './App.css'
 
 import Footer from './Footer'
-import Form from './Form'
-import Location from './Location'
-
+import Header from './Header'
+import HorarioDeFuncionamento from './assets/HorarioDeFuncionamento'
+import Horario from './assets/HorarioDeFuncionamento'
 
 function App() {
   return (
     <>
-      <Location></Location>
-      <Form></Form>
-      <Footer></Footer>
+      {/* <Header></Header> */}
+      <HorarioDeFuncionamento></HorarioDeFuncionamento>
     </>
   )
 }
