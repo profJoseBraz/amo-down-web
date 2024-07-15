@@ -6,7 +6,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(93, 93, 114);
+    background-color: rgb(122,117,182);
     color: rgb(250, 250, 250);
 }
 
@@ -33,7 +33,7 @@ footer {
 .footer-text i {
     font-size: 25px;
     margin-right: 15px;
-    color: rgb(250, 250, 250);
+    color: white;
 }
 
 .footer-text a {
