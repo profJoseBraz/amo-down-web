@@ -1,0 +1,16 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: rgb(250, 250, 250);
+    padding: 50px 0 50px 0;
+}
+
+.location h1 {
+    margin-bottom: 50px;
+}
+
+.location img {
+    margin-bottom: 50px;
+}

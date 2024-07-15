@@ -5,7 +5,6 @@ import Header from './Header'
 import HorarioDeFuncionamento from './assets/HorarioDeFuncionamento'
 import Horario from './assets/HorarioDeFuncionamento'
 
-
 function App() {
   return (
     <>
