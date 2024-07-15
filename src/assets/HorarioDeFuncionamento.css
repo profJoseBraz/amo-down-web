@@ -5,6 +5,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 20px;
+    
+    align-items: center;
   }
   
   h1 {
@@ -13,11 +15,11 @@
   }
   
   table {
-    width: 100%;
+    width: 40%;
     border-collapse: collapse;
     margin-bottom: 20px;
   }
-  
+ 
   th, td {
     border: 1px solid #9512b6;
     padding: 8px;
@@ -33,8 +35,11 @@
   }
   .table-all{
     display: flex;
+    justify-content: space-between;
   }
-
+  .container-table .table-logo{
+    margin-top: 80px;
+  }
   .container-table .table-logo img{
     width: 150px;
     height: auto;

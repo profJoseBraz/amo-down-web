@@ -37,6 +37,9 @@ function HorarioDeFuncionamento() {
             ))}
           </tbody>
         </table>
+        <div className='table-logo'>
+          <img src={Logo3}></img> 
+        </div>
       </div>
     </div>
   );
