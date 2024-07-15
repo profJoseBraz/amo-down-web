@@ -8,11 +8,7 @@ import Sobre from './Sobre'
 function App() {
   return (
     <>
-      <Header></Header>
-      <Sobre></Sobre>
-      <HorarioDeFuncionamento></HorarioDeFuncionamento>
-      <Form></Form>
-      <Footer></Footer>
+
     </>
   )
 }

@@ -1,7 +1,8 @@
 import './Header.css'
 import mascoteFem from './assets/mascoteFem.png'
 import mascoteMasc from './assets/mascoteMasc.png'
-import logoAmoDown from './assets/amodown-logo.png'
+import logoAmoDown from './assets/amodown-logo3.png'
+import menuBurg from './assets/nav-menu-hamburguer.png'
 
 const Header = () => {
   return (
@@ -30,10 +31,40 @@ const Header = () => {
                 <div className="mascote-right">
                     <img src={mascoteMasc} alt='mascote AmoDown' />
                 </div>
-            </div>
 
+                <div className="nav-hamburguer">    
+                    <img src={menuBurg} alt="" />
+
+                    <div className="nav-items">
+                        <div className="close-nav-hamburguer">
+                            <img src={menuBurg} alt="" />
+                        </div>
+
+                        <div className="item">
+                            <span>Sobre</span>
+                        </div>
+
+                        <div className="item">
+                            <span>Ações e Projetos</span>
+                        </div>
+
+                        <div className="item">
+                            <span>Contatos</span>
+                        </div>
+
+                        <div className="item">
+                            <span>Localização</span>
+                        </div>
+
+                        <div className="item">
+                            <span>Horário de funcionamento</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div className="subtitle">
-                <span>Assoociação sem fins lucrativos para pessoas com Síndrome de Down</span>
+                <span>Associação sem fins lucrativos para pessoas com Síndrome de Down</span>
             </div>
         </header>
     </>
