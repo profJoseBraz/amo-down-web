@@ -1,3 +1,4 @@
+import { RefObject } from 'react';
 import './HorarioDeFuncionamento.css';
 import Logo3 from './amodown-logo3.png'
 
@@ -11,11 +12,15 @@ const schedule = [
   { day: 'Sábado', hours: 'Dia Todo', dayIndex: 6 },
 ];
 
-function HorarioDeFuncionamento() {
+interface Props {
+  goToOpeningHours?: RefObject<HTMLDivElement>
+}
+
+function HorarioDeFuncionamento({goToOpeningHours}: Props) {
   const todayIndex = new Date().getDay();
 
   return (
-    <div className="container-table">
+    <div ref={goToOpeningHours} className="container-table">
       <h1>Horário de Funcionamento</h1>
       <div className='table-all'>
         <div className='table-logo'>

@@ -4,7 +4,12 @@ import mascoteMasc from './assets/mascoteMasc.png'
 import logoAmoDown from './assets/amodown-logo3.png'
 import menuBurg from './assets/nav-menu-hamburguer.png'
 
-const Header = () => {
+interface Props{
+    onClickAboutUs?: () => void
+    onClickOpeningHours?: () => void
+}
+
+const Header = ({onClickAboutUs, onClickOpeningHours}: Props) => {
   return (
     <>
         <header>
@@ -16,7 +21,7 @@ const Header = () => {
                 <div className="sections-left">
                     <span>Contato</span>
                     <span>Ações e Projetos</span>
-                    <span>Sobre</span>
+                    <span onClick={onClickAboutUs} >Sobre</span>
                 </div>
 
                 <div className="logo">
@@ -25,7 +30,7 @@ const Header = () => {
 
                 <div className="sections-right">
                     <span>Localização</span>
-                    <span>Horário de funcionamento</span>
+                    <span onClick={onClickOpeningHours} >Horário de funcionamento</span>
                 </div>
 
                 <div className="mascote-right">
@@ -61,10 +66,6 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div className="subtitle">
-                <span>Associação sem fins lucrativos para pessoas com Síndrome de Down</span>
             </div>
         </header>
     </>
