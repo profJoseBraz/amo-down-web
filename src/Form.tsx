@@ -8,6 +8,7 @@ function Form() {
     const [emailContado, setEmailContato] = useState("");
     const [numero, setNumero] = useState("");
     const [message, setMessage] = useState("");
+    const [fullMessage, setFullMessage] = useState("");
 
     useEffect(() => {
         setEmail(email);
@@ -19,7 +20,7 @@ function Form() {
         const formData = {
             name,
             email,
-            message
+            fullMessage
         };
 
         try {
@@ -33,7 +34,7 @@ function Form() {
     };
 
     useEffect(() => {
-        setMessage(`${message}
+        setFullMessage(`${message}
             ${emailContado}
             ${numero}`);
     }, [message, emailContado, numero]);
