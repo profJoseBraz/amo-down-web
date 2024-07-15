@@ -47,14 +47,28 @@ function Form() {
                 <h3>Um email será enviado para o proprietário</h3>
                 <form>
                     <div className="all-inputs">
-                        <textarea placeholder="Escreva sua mensagem" onChange={(e) => {setMessage(e.target.value)}}></textarea>
+                        <div className="focus">
+                            <h3 className="placeholder">Escreva sua mensagem</h3>
+                            <textarea onChange={(e) => {setMessage(e.target.value)}}></textarea>
+                        </div>
                         <div className="inputs">
-                            <input type="text" placeholder="Seu nome" onChange={(e) => {setName(e.target.value)}}/>
-                            <input type="text" placeholder="Seu email" onChange={(e) => {setEmailContato(e.target.value)}}/>
-                            <input type="text" placeholder="Seu número de telefone" onChange={(e) => {setNumero(e.target.value)}}/>
+                            <div className="focus">
+                                <h3 className="placeholder">Seu nome</h3>
+                                <input type="text" onChange={(e) => {setName(e.target.value)}}/>
+                            </div>
+                            
+                            <div className="focus">
+                                <h3 className="placeholder">Seu email</h3>
+                                <input type="text" onChange={(e) => {setEmailContato(e.target.value)}}/>
+                            </div>
+
+                            <div className="focus">
+                                <h3 className="placeholder">Seu número de telefone</h3>
+                                <input type="text" onChange={(e) => {setNumero(e.target.value)}}/>
+                            </div>
                         </div>
                     </div>
-                    <button onClick={handleSubmit}>Envie a Mensagem</button>
+                    <button onClick={handleSubmit}>Enviar Mensagem</button>
                 </form>
             </div>
         </>
