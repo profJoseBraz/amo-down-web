@@ -1,10 +1,12 @@
 .location {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(30, 32, 87);
     color: white;
     padding: 50px 0 50px 0;
+    overflow-x: hidden;
 }
 
 .location h1 {
@@ -14,4 +16,10 @@
 .location img {
     width: 100vw;
     margin-bottom: 50px;
+}
+
+@media (max-width: 430px) {
+    .location {
+        font-size: 14px;
+    }
 }
