@@ -108,7 +108,7 @@ header .nav-hamburguer{
 }
 
 @media (min-width: 1025px) and (max-width: 1350px) {
-    header .navegacao{
+    header{
         height: 135px;
     }
 
@@ -177,9 +177,13 @@ header .nav-hamburguer{
     }
 }
 
-@media (min-width: 700px) and (max-width: 819px) {
-    header .navegacao{
+@media (min-width: 720px) and (max-width: 819px) {
+    header{
         height: 110px;
+        position: relative;
+    }
+
+    header{
         position: relative;
     }
 
@@ -274,8 +278,11 @@ header .nav-hamburguer{
 }
 
 @media (min-width: 481px) and (max-width: 719px) {
-    header .navegacao{
+    header{
         height: 110px;
+    }
+
+    header .navegacao{
         position: relative;
     }
 
@@ -367,10 +374,12 @@ header .nav-hamburguer{
 }
 
 @media (min-width: 380px) and (max-width: 480px) {
-    header .navegacao{
+    header {
         height: 110px;
-        position: relative;
+    }
 
+    header .navegacao{
+        position: relative;
         border-bottom: 2px solid rgba(0, 0, 0, 0.150);
     }
 
@@ -463,10 +472,12 @@ header .nav-hamburguer{
 }
 
 @media (max-width: 379px) {
-    header .navegacao{
+    header{
         height: 110px;
-        position: relative;
+    }
 
+    header .navegacao{
+        position: relative;
         border-bottom: 2px solid rgba(0, 0, 0, 0.150);
     }
 
