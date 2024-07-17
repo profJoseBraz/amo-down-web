@@ -1,8 +1,12 @@
 import "./Form.css";
-import { useEffect, useState } from "react";
+import { RefObject, useEffect, useState } from "react";
 import axios from "axios";
 
-function Form() {
+interface Props {
+    goToContact?: RefObject<HTMLDivElement>
+}
+
+function Form({goToContact}: Props) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("tftv2024@tftv.io");
     const [emailContado, setEmailContato] = useState("");
@@ -41,7 +45,7 @@ function Form() {
 
     return (
         <>
-            <div className="form">
+            <div ref={goToContact} className="form">
                 <h1>Envie uma Mensagem</h1>
                 <div className="line"></div>
                 <h3>Um email será enviado para o proprietário</h3>

@@ -7,9 +7,12 @@ import menuBurg from './assets/nav-menu-hamburguer.png'
 interface Props{
     onClickAboutUs?: () => void
     onClickOpeningHours?: () => void
+    onClickContact?: () => void
+    onClickActionsAndProjects?: () => void
+    onClickLocation?: () => void
 }
 
-const Header = ({onClickAboutUs, onClickOpeningHours}: Props) => {
+const Header = ({onClickAboutUs, onClickOpeningHours, onClickContact, onClickActionsAndProjects, onClickLocation}: Props) => {
   return (
     <>
         <header>
@@ -19,8 +22,8 @@ const Header = ({onClickAboutUs, onClickOpeningHours}: Props) => {
                 </div>
 
                 <div className="sections-left">
-                    <span>Contato</span>
-                    <span>Ações e Projetos</span>
+                    <span onClick={onClickContact} >Contato</span>
+                    <span onClick={onClickActionsAndProjects} >Ações e Projetos</span>
                     <span onClick={onClickAboutUs} >Sobre</span>
                 </div>
 
@@ -29,7 +32,7 @@ const Header = ({onClickAboutUs, onClickOpeningHours}: Props) => {
                 </div>
 
                 <div className="sections-right">
-                    <span>Localização</span>
+                    <span onClick={onClickLocation} >Localização</span>
                     <span onClick={onClickOpeningHours} >Horário de funcionamento</span>
                 </div>
 
@@ -46,23 +49,23 @@ const Header = ({onClickAboutUs, onClickOpeningHours}: Props) => {
                         </div>
 
                         <div className="item">
-                            <span>Sobre</span>
+                            <span onClick={onClickAboutUs} >Sobre</span>
                         </div>
 
                         <div className="item">
-                            <span>Ações e Projetos</span>
+                            <span onClick={onClickActionsAndProjects} >Ações e Projetos</span>
                         </div>
 
                         <div className="item">
-                            <span>Contatos</span>
+                            <span onClick={onClickContact} >Contatos</span>
                         </div>
 
                         <div className="item">
-                            <span>Localização</span>
+                            <span onClick={onClickLocation} >Localização</span>
                         </div>
 
                         <div className="item">
-                            <span>Horário de funcionamento</span>
+                            <span onClick={onClickOpeningHours} >Horário de funcionamento</span>
                         </div>
                     </div>
                 </div>
