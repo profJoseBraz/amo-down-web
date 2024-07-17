@@ -8,6 +8,7 @@ footer {
     align-items: center;
     background-color: rgb(240, 240, 240);
     color: rgb(23, 36, 46);
+    overflow-x: hidden;
 }
 
 .footer-title {
@@ -20,7 +21,6 @@ footer {
 .footer-text {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
 }
 
 .footer-text h3 {
@@ -44,6 +44,10 @@ footer {
 @media (max-width: 430px) {
     footer {
         font-size: 14px;
+    }
+
+    .footer-text {
+        padding-left: 10px;
     }
 
     .footer-text h3 {
