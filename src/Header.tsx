@@ -4,7 +4,15 @@ import mascoteMasc from './assets/mascoteMasc.png'
 import logoAmoDown from './assets/amodown-logo3.png'
 import menuBurg from './assets/nav-menu-hamburguer.png'
 
-const Header = () => {
+interface Props{
+    onClickAboutUs?: () => void
+    onClickOpeningHours?: () => void
+    onClickContact?: () => void
+    onClickActionsAndProjects?: () => void
+    onClickLocation?: () => void
+}
+
+const Header = ({onClickAboutUs, onClickOpeningHours, onClickContact, onClickActionsAndProjects, onClickLocation}: Props) => {
   return (
     <>
         <header>
@@ -14,9 +22,9 @@ const Header = () => {
                 </div>
 
                 <div className="sections-left">
-                    <span>Contato</span>
-                    <span>Ações e Projetos</span>
-                    <span>Sobre</span>
+                    <span onClick={onClickContact} >Contato</span>
+                    <span onClick={onClickActionsAndProjects} >Ações e Projetos</span>
+                    <span onClick={onClickAboutUs} >Sobre</span>
                 </div>
 
                 <div className="logo">
@@ -24,8 +32,8 @@ const Header = () => {
                 </div>
 
                 <div className="sections-right">
-                    <span>Localização</span>
-                    <span>Horário de funcionamento</span>
+                    <span onClick={onClickLocation} >Localização</span>
+                    <span onClick={onClickOpeningHours} >Horário de funcionamento</span>
                 </div>
 
                 <div className="mascote-right">
@@ -41,30 +49,26 @@ const Header = () => {
                         </div>
 
                         <div className="item">
-                            <span>Sobre</span>
+                            <span onClick={onClickAboutUs} >Sobre</span>
                         </div>
 
                         <div className="item">
-                            <span>Ações e Projetos</span>
+                            <span onClick={onClickActionsAndProjects} >Ações e Projetos</span>
                         </div>
 
                         <div className="item">
-                            <span>Contatos</span>
+                            <span onClick={onClickContact} >Contatos</span>
                         </div>
 
                         <div className="item">
-                            <span>Localização</span>
+                            <span onClick={onClickLocation} >Localização</span>
                         </div>
 
                         <div className="item">
-                            <span>Horário de funcionamento</span>
+                            <span onClick={onClickOpeningHours} >Horário de funcionamento</span>
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div className="subtitle">
-                <span>Associação sem fins lucrativos para pessoas com Síndrome de Down</span>
             </div>
         </header>
     </>

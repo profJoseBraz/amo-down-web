@@ -3,11 +3,16 @@ import tempIMG1 from './assets/20210208-144547jpg.webp'
 import tempIMG2 from './assets/IMG-20210205-223235-191jpg.webp'
 import tempIMG3 from './assets/shutterstock_1090956650.webp'
 import maoAmoDown from './assets/maozinha-amoDown.png'
+import { RefObject } from 'react'
 
-const Sobre = () => {
+interface Props {
+    goToAbout?: RefObject<HTMLDivElement>
+}
+
+const Sobre = ({goToAbout}: Props) => {
   return (
     <>
-        <div className="container-sobre">
+        <div ref={goToAbout} className="container-sobre">
             <img className='bg-decoration-top-right' src={maoAmoDown} alt='mão amoDown'/>
             <img className='bg-decoration-top-left' src={maoAmoDown} alt='mão amoDown'/>
             <img className='bg-decoration-bottom-mid' src={maoAmoDown} alt='mão amoDown'/>
