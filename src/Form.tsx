@@ -24,7 +24,8 @@ function Form({goToContact}: Props) {
         const formData = {
             name,
             email,
-            fullMessage
+            fullMessage,
+            emailContado
         };
 
         try {
@@ -96,6 +97,11 @@ function Form({goToContact}: Props) {
                                 <h3 className="placeholder" id="4">Seu número de telefone</h3>
                                 <input type="text" onChange={(e) => {setNumero(e.target.value)}}/>
                             </div>
+                            <label>Tenho filho/a/s com síndrome de down?</label>
+                            <select>
+                                <option value="sim">Sim</option>
+                                <option value="não">Não</option>
+                            </select>
                         </div>
                     </div>
                     <button onClick={handleSubmit}>Enviar Mensagem</button>
