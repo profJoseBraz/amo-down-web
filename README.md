@@ -12,3 +12,6 @@ https://drive.google.com/drive/folders/1ibHraNwP8nAkc4OxrWMxHGfWlcP8uDsD
 # Redes sociais
 
   - Instagram: https://www.instagram.com/amodown?utm_source=qr&igsh=MTN2ZGx0NG8yZm8zdg==
+
+# ✍️ To-Do:
+  - Coletar dados sobre a quantidade de pessoas com síndrome de Down e suas localidades.
