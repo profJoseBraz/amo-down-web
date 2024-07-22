@@ -13,6 +13,11 @@ function Form({goToContact}: Props) {
     const [numero, setNumero] = useState("");
     const [message, setMessage] = useState("");
     const [fullMessage, setFullMessage] = useState("");
+    const [selectValue, setSelectValue] = useState("");
+
+    const handleSelect = (e : any) => {
+        setSelectValue(e.target.value);
+    };
 
     useEffect(() => {
         setEmail(email);
@@ -25,7 +30,8 @@ function Form({goToContact}: Props) {
             name,
             email,
             fullMessage,
-            emailContado
+            emailContado,
+            selectValue
         };
 
         try {
@@ -98,7 +104,7 @@ function Form({goToContact}: Props) {
                                 <input type="text" onChange={(e) => {setNumero(e.target.value)}}/>
                             </div>
                             <label>Tenho filho/a/s com síndrome de down?</label>
-                            <select>
+                            <select value={selectValue} onChange={handleSelect}>
                                 <option value="sim">Sim</option>
                                 <option value="não">Não</option>
                             </select>
