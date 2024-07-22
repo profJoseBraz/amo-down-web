@@ -8,12 +8,13 @@ footer {
     align-items: center;
     background-color: rgb(240, 240, 240);
     color: rgb(23, 36, 46);
+    overflow-x: hidden;
 }
 
 .footer-title {
     display: flex;
     justify-content: center;
-     margin-top: 40px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -38,4 +39,18 @@ footer {
 
 .footer-text a {
     text-decoration: none;
+}
+
+@media (max-width: 430px) {
+    footer {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        padding-left: 10px;
+    }
+
+    .footer-text h3 {
+        font-size: 12px;
+    }
 }
