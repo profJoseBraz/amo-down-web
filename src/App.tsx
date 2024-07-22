@@ -71,7 +71,7 @@ function App() {
     if (actionAndProjetcts.current) {
       const topValue = document.body.getBoundingClientRect().top
       const sessionValue = actionAndProjetcts.current.getBoundingClientRect().top
-      const ajuste = -50
+      const ajuste = 0
       
       const result = sessionValue - topValue
       const scrollValue = result + ajuste
