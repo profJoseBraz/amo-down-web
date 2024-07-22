@@ -13,7 +13,7 @@ function Form({goToContact}: Props) {
     const [numero, setNumero] = useState("");
     const [message, setMessage] = useState("");
     const [fullMessage, setFullMessage] = useState("");
-    const [selectValue, setSelectValue] = useState("");
+    const [selectValue, setSelectValue] = useState("sim");
 
     const handleSelect = (e : any) => {
         setSelectValue(e.target.value);
