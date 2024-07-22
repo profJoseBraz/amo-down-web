@@ -44,3 +44,43 @@
     width: 150px;
     height: auto;
   }
+  @media (min-width: 200px) and (max-width: 600px){
+    .container-table .table-logo img{
+      width: 50px;
+      height: auto;
+    }
+    th, td{
+      font-size: 10px;
+    }
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 200px) and (max-height: 800px){
+    .container-table .table-logo img{
+      width: 50px;
+      height: auto;
+    }
+    th, td{
+      font-size: 10px;
+    }
+    table {
+      width: 70%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width:360) and (max-height:915){
+
+  }
+    
+  
