@@ -2,9 +2,6 @@
     font-family: Arial, sans-serif;
     background-color: rgba(228, 184, 248, 0.836);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 20px;
     
     align-items: center;
   }

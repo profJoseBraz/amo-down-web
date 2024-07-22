@@ -1,12 +1,13 @@
 import { useRef } from 'react'
 import './App.css'
 
-import HorarioDeFuncionamento from './assets/HorarioDeFuncionamento'
+import HorarioDeFuncionamento from './HorarioDeFuncionamento'
 import Footer from './Footer'
 import Form from './Form'
 import Header from './Header'
 import Location from './Location'
 import Sobre from './Sobre'
+import ActionsAndProjects from './ActionsAndProjects'
 
 function App() {
 
@@ -70,7 +71,7 @@ function App() {
     if (actionAndProjetcts.current) {
       const topValue = document.body.getBoundingClientRect().top
       const sessionValue = actionAndProjetcts.current.getBoundingClientRect().top
-      const ajuste = 10
+      const ajuste = 0
       
       const result = sessionValue - topValue
       const scrollValue = result + ajuste
@@ -111,6 +112,7 @@ function App() {
       />
       
       <Sobre goToAbout={aboutUs}/>
+      <ActionsAndProjects goToActionsAndProjects={actionAndProjetcts} />
       <HorarioDeFuncionamento goToOpeningHours={openingHours} />
       <Location goToLocation={location} />
       <Form goToContact={contact} />

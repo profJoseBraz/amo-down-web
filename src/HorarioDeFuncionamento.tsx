@@ -1,6 +1,6 @@
 import { RefObject } from 'react';
 import './HorarioDeFuncionamento.css';
-import Logo3 from './amodown-logo3.png'
+import Logo3 from '../src/assets/amodown-logo3.png'
 
 const schedule = [
   { day: 'Domingo', hours: 'Dia Todo', dayIndex: 0 },
